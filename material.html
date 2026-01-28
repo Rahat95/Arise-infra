@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium building materials supplier - Aggregates, M-Sand, Cement, Bricks & Blocks. Quality construction materials with technical specifications and bulk supply options.">
+    <meta name="keywords" content="building materials, aggregates, M-sand, cement, bricks, construction materials, stone chips, manufactured sand, OPC cement, PPC cement">
+    <title>Building Materials - Aggregates, M-Sand, Cement & Bricks | Arise Infra Trading Co</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    /* Global Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --accent-color: #ff9900;
+  --light-bg: #f8f9fa;
+  --dark-bg: #333;
+  --border-color: #e0e0e0;
+  --text-dark: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #e68900;
+  transform: translateY(-2px);
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--secondary-color);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-dark);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-column p {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: var(--white);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    order: 2;
+  }
+  
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    order: 3;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .nav-menu li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  
+  .header-cta {
+    order: 1;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+</style>
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo/Branding -->
+      <a href="index.html" class="logo">Arise Infra Trading Co.</a>
+      
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="material.html" class="nav-link">Materials</a></li>
+          <li><a href="testimonials-1.html" class="nav-link">Testimonials</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <!-- CTA Button -->
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .hero-section {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background-color: #f59e0b;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Product Sections */
+        .product-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1e40af;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+             position: relative;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+        }
+        .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps image proportional */
+    display: block;
+}
+
+.product-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+        .product-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        }
+
+        .product-title {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        .product-content {
+            padding: 30px;
+        }
+
+        .product-description {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .features-list li i {
+            color: #10b981;
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .specifications {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .specifications h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #1e40af;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .spec-label {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .spec-value {
+            color: #6b7280;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            margin-top: 40px;
+        }
+
+        .comparison-header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .comparison-header h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+        }
+
+        .comparison-category {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            font-weight: 600;
+            background-color: #f8fafc;
+            text-align: center;
+        }
+
+        .comparison-item {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .comparison-item:last-child {
+            border-right: none;
+        }
+
+        .advantage {
+            background-color: #f0fdf4;
+            color: #166534;
+            font-weight: 600;
+        }
+
+        .disadvantage {
+            background-color: #fef2f2;
+            color: #dc2626;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        .recommendation h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-item {
+                border-right: none;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .product-content {
+                padding: 20px;
+            }
+        }
+
+        /* Background Images */
+        .aggregates-bg {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" fill="%23374151"><rect width="400" height="250"/><text x="200" y="125" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Aggregates</text></svg>');
+        }
+
+        .msand-bg {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" fill="%23f59e0b"><rect width="400" height="250"/><text x="200" y="125" text-anchor="middle" fill="white" font-size="24" font-family="Arial">M-Sand</text></svg>');
+        }
+
+        .cement-bg {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" fill="%236b7280"><rect width="400" height="250"/><text x="200" y="125" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Cement</text></svg>');
+        }
+
+        .bricks-bg {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" fill="%23dc2626"><rect width="400" height="250"/><text x="200" y="125" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Bricks</text></svg>');
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Premium Building Materials in Mumbai & Thane region</h1>
+            <p>Quality aggregates, M-Sand, cement, and bricks for all your construction needs. Trusted by builders across the Mumbai region.</p>
+            <div class="cta-buttons">
+                <a href="/contact.html" class="btn btn-primary">
+                    <i class="fas fa-calculator"></i>
+                    Get Instant Quote
+                </a>
+                <a href="#comparison" class="btn btn-secondary">
+                    <i class="fas fa-balance-scale"></i>
+                    Material Comparison Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Block 1: Foundation Materials -->
+    <section class="product-section">
+        <div class="container">
+            <h2 class="section-title">Foundation Materials</h2>
+            <p class="section-subtitle">High-quality aggregates and manufactured sand for strong, durable foundations</p>
+            
+            <div class="product-grid">
+                <!-- Aggregates -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/aggregates-image.png" alt="Aggregates Stone Chips">
+                        <h3 class="product-title">Aggregates (Stone Chips)</h3>
+                </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            Premium quality stone chips available in multiple sizes for various construction applications. 
+                            Our aggregates are sourced from approved quarries and meet all IS standards for strength and durability.
+                        </p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check-circle"></i> Available in 10mm, 20mm, and 40mm sizes</li>
+                            <li><i class="fas fa-check-circle"></i> Superior crushing value (&lt;30%)</li>
+                            <li><i class="fas fa-check-circle"></i> Low flakiness index (&lt;15%)</li>
+                            <li><i class="fas fa-check-circle"></i> Consistent grading and quality</li>
+                            <li><i class="fas fa-check-circle"></i> Bulk supply with timely delivery</li>
+                        </ul>
+
+                        <div class="specifications">
+                            <h4><i class="fas fa-cogs"></i> Technical Specifications</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Crushing Value:</span>
+                                    <span class="spec-value">&lt;30%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Flakiness Index:</span>
+                                    <span class="spec-value">&lt;15%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Impact Value:</span>
+                                    <span class="spec-value">&lt;45%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Water Absorption:</span>
+                                    <span class="spec-value">&lt;2%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- M-Sand -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/M-Sand.png" alt="M-sand">
+                        <h3 class="product-title">M-Sand (Manufactured Sand)</h3>
+                </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            Eco-friendly manufactured sand produced using VSI crushing technology. 
+                            Superior alternative to river sand with consistent quality, cubical shape, and zero environmental impact.
+                        </p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-leaf"></i> 100% sustainable and eco-friendly</li>
+                            <li><i class="fas fa-cube"></i> Perfect cubical shape for better bonding</li>
+                            <li><i class="fas fa-industry"></i> VSI crushing technology</li>
+                            <li><i class="fas fa-certificate"></i> IS 383 compliant</li>
+                            <li><i class="fas fa-water"></i> Low silt content (&lt;3%)</li>
+                            <li><i class="fas fa-chart-line"></i> Consistent gradation</li>
+                        </ul>
+
+                        <div class="specifications">
+                            <h4><i class="fas fa-microscope"></i> Quality Parameters</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Silt Content:</span>
+                                    <span class="spec-value">&lt;3%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Fineness Modulus:</span>
+                                    <span class="spec-value">2.2-3.2</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Bulk Density:</span>
+                                    <span class="spec-value">1450-1650 kg/m³</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Moisture Content:</span>
+                                    <span class="spec-value">&lt;5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Block 2: Structural Components -->
+    <section class="product-section" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Structural Components</h2>
+            <p class="section-subtitle">Premium cement and bricks for robust structural construction</p>
+            
+            <div class="product-grid">
+                <!-- Cement -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/Ultra-tech-cement.png" alt="Ultra-tech-cement">
+                        <h3 class="product-title">Cement (OPC & PPC)</h3>
+                </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            Premium quality cement from leading brands. Available in both OPC (Ordinary Portland Cement) 
+                            and PPC (Portland Pozzolana Cement) grades for different construction requirements.
+                        </p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-award"></i> OPC 43 & 53 Grade - High early strength</li>
+                            <li><i class="fas fa-shield-alt"></i> PPC - Chemical resistance & durability</li>
+                            <li><i class="fas fa-truck"></i> Available in bags (50kg) and bulk supply</li>
+                            <li><i class="fas fa-star"></i> Leading brands: UltraTech, ACC, Ambuja</li>
+                            <li><i class="fas fa-warehouse"></i> Proper storage and handling</li>
+                            <li><i class="fas fa-clock"></i> Fresh stock with optimal setting time</li>
+                        </ul>
+
+                        <div class="specifications">
+                            <h4><i class="fas fa-flask"></i> Cement Grades Available</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">OPC 43 Grade:</span>
+                                    <span class="spec-value">General construction</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">OPC 53 Grade:</span>
+                                    <span class="spec-value">High-strength structures</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">PPC:</span>
+                                    <span class="spec-value">Plastering & masonry</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Setting Time:</span>
+                                    <span class="spec-value">30 min - 10 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bricks/Blocks -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/aac-block-vs-red-brick.png" alt="aac-block-vs-red-brick">
+                        <h3 class="product-title">Bricks & Blocks</h3>
+                </div>
+                    <div class="product-content">
+                        <p class="product-description">
+                            High-quality clay bricks and fly ash blocks for all masonry applications. 
+                            Each batch is tested for compression strength and dimensional accuracy.
+                        </p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-fire"></i> Red Clay Bricks - Superior thermal insulation</li>
+                            <li><i class="fas fa-feather"></i> Fly Ash Blocks - Lightweight & uniform</li>
+                            <li><i class="fas fa-ruler"></i> Standard dimensions: Any</li>
+                            <li><i class="fas fa-compress"></i> Compression strength tested</li>
+                            <li><i class="fas fa-droplet"></i> Low water absorption rate</li>
+                            <li><i class="fas fa-check-double"></i> Consistent quality and finish</li>
+                        </ul>
+
+                        <div class="specifications">
+                            <h4><i class="fas fa-cubes"></i> Brick Specifications</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Compression Strength:</span>
+                                    <span class="spec-value">3.5-10 N/mm²</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Water Absorption:</span>
+                                    <span class="spec-value">&lt;20%</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Dimensions:</span>
+                                    <span class="spec-value">Any</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Fly Ash Content:</span>
+                                    <span class="spec-value">60-70% (Blocks)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive/SEO Section: M-Sand vs River Sand -->
+    <section class="comparison-section" id="comparison">
+        <div class="container">
+            <h2 class="section-title">M-Sand vs River Sand</h2>
+            <p class="section-subtitle">Comprehensive comparison to help you make the right choice for your construction project</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <h3>Technical Comparison Analysis</h3>
+                    <p>Based on IS 383 standards and construction best practices</p>
+                </div>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-category">Parameter</div>
+                    <div class="comparison-category">M-Sand (Manufactured Sand)</div>
+                    <div class="comparison-category">River Sand</div>
+                    
+                    <div class="comparison-item"><strong>Particle Shape</strong></div>
+                    <div class="comparison-item advantage">Cubical & Angular - Better bonding</div>
+                    <div class="comparison-item">Rounded - Less bonding strength</div>
+                    
+                    <div class="comparison-item"><strong>Silt Content</strong></div>
+                    <div class="comparison-item advantage">&lt;3% - Controlled quality</div>
+                    <div class="comparison-item disadvantage">5-15% - Variable quality</div>
+                    
+                    <div class="comparison-item"><strong>Gradation</strong></div>
+                    <div class="comparison-item advantage">Consistent & Controlled</div>
+                    <div class="comparison-item">Variable & Inconsistent</div>
+                    
+                    <div class="comparison-item"><strong>Availability</strong></div>
+                    <div class="comparison-item advantage">Unlimited - Manufactured</div>
+                    <div class="comparison-item disadvantage">Limited - Natural depletion</div>
+                    
+                    <div class="comparison-item"><strong>Environmental Impact</strong></div>
+                    <div class="comparison-item advantage">Zero - Eco-friendly</div>
+                    <div class="comparison-item disadvantage">High - River ecosystem damage</div>
+                    
+                    <div class="comparison-item"><strong>Cost Consistency</strong></div>
+                    <div class="comparison-item advantage">Stable pricing</div>
+                    <div class="comparison-item">Fluctuating prices</div>
+                    
+                    <div class="comparison-item"><strong>Strength Development</strong></div>
+                    <div class="comparison-item advantage">Superior - Better interlocking</div>
+                    <div class="comparison-item">Good - Standard performance</div>
+                    
+                    <div class="comparison-item"><strong>Durability</strong></div>
+                    <div class="comparison-item advantage">Excellent - Low porosity</div>
+                    <div class="comparison-item">Good - Higher porosity</div>
+                </div>
+            </div>
+
+            <div class="recommendation">
+                <h3><i class="fas fa-thumbs-up"></i> Our Professional Recommendation</h3>
+                <p>
+                    For superior structural integrity, consistent quality, and environmental responsibility, 
+                    we strongly recommend M-Sand for all concrete and masonry applications. 
+                    The cubical particle shape and controlled gradation result in 20-25% higher compressive strength 
+                    compared to conventional river sand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Get competitive quotes for all your building material requirements. Quality guaranteed, delivery on time.</p>
+            <div class="cta-buttons">
+                <a href="tel:+919820953268" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Call Now: +91 9820953268
+                </a>
+                <a href="mailto:info@ariseinfra.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Email Quote Request
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all product cards
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+    <!-- Mobile Menu JavaScript -->
+<script>
+document.getElementById('menuToggle').addEventListener('click', function() {
+  const navMenu = document.getElementById('navMenu');
+  navMenu.classList.toggle('active');
+});
+</script>
+<footer class="footer">
+  <div class="container">
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <!-- Column 1: About/Branding -->
+      <div class="footer-column">
+        <h3>Arise Infra Trading Co.</h3>
+        <p>Your trusted partner for premium quality construction materials supplier, cement, aggregates  and sand - building foundations for tomorrow.</p>
+        <p>&copy; 2026 Arise Infra Trading Co. All rights reserved.</p>
+      </div>
+      
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="civilmaterial.html">Materials</a></li>
+          <li><a href="testimonials-1.html">Testimonials</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+        <h3>Contact Information</h3>
+        <p><strong>Phone:</strong> +91 9820953268</p>
+        <p><strong>Email:</strong> ariseinfratrading@gmail.com</p>
+        <p><strong>Address:</strong> B/201, Almel House, Miraroad, Mumbai</p>
+      </div>
+      
+      <!-- Column 4: Social Media -->
+      <div class="footer-column">
+        <h3>Stay Connected</h3>
+        <p>Follow us on social media for updates and industry insights.</p>
+        <div class="social-icons">
+          <!-- <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
+          <a href="#" class="social-icon" aria-label="Facebook">Fb</a>
+          <a href="#" class="social-icon" aria-label="Instagram">Ig</a> -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Arise Infra Trading Co. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
