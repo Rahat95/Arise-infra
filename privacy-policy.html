@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arise Infra Trading (AI Trading Co.) - Quality Building Materials Supplier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>/* General Resets and Global Variables */
+:root {
+    --primary-color: #007bff; /* Blue for primary CTAs and accents */
+    --secondary-color: #0056b3; /* Darker blue for hover states */
+    --accent-color: #ff9900; /* Orange/Yellow for subtle accents */
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* --- Buttons (CTAs) --- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: url('placeholder-infra.jpg') no-repeat center center/cover; /* REPLACE with your actual image */
+    background-color: #555; /* Fallback color */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-headline {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.hero-subtext {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- About Us Snapshot --- */
+.about-us-snapshot {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.about-us-snapshot h3 {
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* --- Features / Why Choose Us --- */
+.features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Media Queries for Basic Responsiveness --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-headline {
+        font-size: 2em;
+    }
+
+    .hero-ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .btn {
+        margin: 0;
+        width: 100%; /* Full width buttons on mobile */
+        max-width: 300px;
+    }
+}</style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">AI Trading Co.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-headline">BUILDING INFRASTRUCTURE. DELIVERING EXCELLENCE.</h2>
+            <p class="hero-subtext">Your trusted source for certified Aggregates, Cement, River & Crush Sand, and Bricks. Quality materials, delivered on time for projects of any scale.</p>
+            <div class="hero-ctas">
+                <a href="contactus.html" class="btn btn-primary">GET A FREE QUOTE TODAY</a>
+                <a href="materials.html" class="btn btn-secondary">Explore Our Materials &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-snapshot">
+        <div class="container">
+            <h3>🤝 Arise Infra Trading: Your Reliable Partner</h3>
+            <div class="about-content">
+                <p>Established on the principle of **integrity and timely delivery**, Arise Infra Trading Co. is a leading building material supplier committed to supporting India's infrastructure boom. We source only the highest-grade raw materials—Aggregates, Sand, Cement, and Bricks—to ensure the longevity and strength of your construction projects.</p>
+                <p>We understand that construction timelines are critical. Our specialized logistics ensure that you receive your order exactly when and where you need it, minimizing costly delays and keeping your project on track.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3 class="section-title">Why Choose AI Trading Co.?</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certified Quality</h4>
+                    <p>All materials are subjected to rigorous checks to meet the highest industry standards for strength and durability.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <h4>Timely Logistics</h4>
+                    <p>Dedicated fleet and planning ensure materials arrive on-site, on schedule, every single time.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-indian-rupee-sign"></i>
+                    <h4>Competitive Pricing</h4>
+                    <p>We leverage strong supplier relationships to offer the best value without compromising material integrity.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>Expert Support</h4>
+                    <p>Our knowledgeable team helps you select the optimal materials and calculate quantities accurately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arise Infra Trading (AI Trading Co.). All Rights Reserved.</p>
+            <p class="footer-links">
+                <a href="contactus.html">Request a Quote</a> |
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
